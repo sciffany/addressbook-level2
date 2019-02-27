@@ -40,6 +40,10 @@ public class FindCommandTest {
 
         //Keyword matching a word in address: not matched
         assertFindCommandBehavior(new String[]{"Clementi"}, Collections.emptyList());
+
+        //Able to find keywords based on tags
+        assertFindCommandBehavior(new String[]{"test"},
+                Arrays.asList(td.dan));
     }
 
     /**
